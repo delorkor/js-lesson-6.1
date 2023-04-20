@@ -35,8 +35,8 @@ if (this[arr[i][0]]=='') {
 
     
 }
- this.age=prompt('Введите возраст','')
-while (!Number.isFinite(this.age) && this.age=='' ) {
+ this.age=+prompt('Введите возраст','')
+while (!Number.isFinite(this.age) || this.age=='' ) {
     alert(`ошибка вы не ввели ответ на вопрос Введите возраст`)
     this.age=+prompt('Введите возраст','')
 }
